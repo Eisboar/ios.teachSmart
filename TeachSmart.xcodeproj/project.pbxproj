@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D907C2A0196D9EFD0088FD8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D907C29F196D9EFD0088FD8D /* Foundation.framework */; };
+		D907C2A2196D9EFD0088FD8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D907C2A1196D9EFD0088FD8D /* CoreGraphics.framework */; };
+		D907C2A4196D9EFD0088FD8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D907C2A3196D9EFD0088FD8D /* UIKit.framework */; };
+		D907C2AA196D9EFD0088FD8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D907C2A8196D9EFD0088FD8D /* InfoPlist.strings */; };
+		D907C2AC196D9EFD0088FD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2AB196D9EFD0088FD8D /* main.m */; };
+		D907C2B0196D9EFD0088FD8D /* TeachSmartAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2AF196D9EFD0088FD8D /* TeachSmartAppDelegate.m */; };
+		D907C2B3196D9EFD0088FD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D907C2B1196D9EFD0088FD8D /* Main.storyboard */; };
+		D907C2B6196D9EFD0088FD8D /* TeachSmartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2B5196D9EFD0088FD8D /* TeachSmartViewController.m */; };
+		D907C2B8196D9EFD0088FD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D907C2B7196D9EFD0088FD8D /* Images.xcassets */; };
+		D907C2BF196D9EFD0088FD8D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D907C2BE196D9EFD0088FD8D /* XCTest.framework */; };
+		D907C2C0196D9EFD0088FD8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D907C29F196D9EFD0088FD8D /* Foundation.framework */; };
+		D907C2C1196D9EFD0088FD8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D907C2A3196D9EFD0088FD8D /* UIKit.framework */; };
+		D907C2C9196D9EFD0088FD8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D907C2C7196D9EFD0088FD8D /* InfoPlist.strings */; };
+		D907C2CB196D9EFD0088FD8D /* TeachSmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2CA196D9EFD0088FD8D /* TeachSmartTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D907C2C2196D9EFD0088FD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D907C294196D9EFD0088FD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D907C29B196D9EFD0088FD8D;
+			remoteInfo = TeachSmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D907C29C196D9EFD0088FD8D /* TeachSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeachSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D907C29F196D9EFD0088FD8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D907C2A1196D9EFD0088FD8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D907C2A3196D9EFD0088FD8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D907C2A7196D9EFD0088FD8D /* TeachSmart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TeachSmart-Info.plist"; sourceTree = "<group>"; };
+		D907C2A9196D9EFD0088FD8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D907C2AB196D9EFD0088FD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D907C2AD196D9EFD0088FD8D /* TeachSmart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TeachSmart-Prefix.pch"; sourceTree = "<group>"; };
+		D907C2AE196D9EFD0088FD8D /* TeachSmartAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachSmartAppDelegate.h; sourceTree = "<group>"; };
+		D907C2AF196D9EFD0088FD8D /* TeachSmartAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachSmartAppDelegate.m; sourceTree = "<group>"; };
+		D907C2B2196D9EFD0088FD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D907C2B4196D9EFD0088FD8D /* TeachSmartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachSmartViewController.h; sourceTree = "<group>"; };
+		D907C2B5196D9EFD0088FD8D /* TeachSmartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachSmartViewController.m; sourceTree = "<group>"; };
+		D907C2B7196D9EFD0088FD8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D907C2BD196D9EFD0088FD8D /* TeachSmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D907C2BE196D9EFD0088FD8D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D907C2C6196D9EFD0088FD8D /* TeachSmartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TeachSmartTests-Info.plist"; sourceTree = "<group>"; };
+		D907C2C8196D9EFD0088FD8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D907C2CA196D9EFD0088FD8D /* TeachSmartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachSmartTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D907C299196D9EFD0088FD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D907C2A2196D9EFD0088FD8D /* CoreGraphics.framework in Frameworks */,
+				D907C2A4196D9EFD0088FD8D /* UIKit.framework in Frameworks */,
+				D907C2A0196D9EFD0088FD8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D907C2BA196D9EFD0088FD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D907C2BF196D9EFD0088FD8D /* XCTest.framework in Frameworks */,
+				D907C2C1196D9EFD0088FD8D /* UIKit.framework in Frameworks */,
+				D907C2C0196D9EFD0088FD8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D907C293196D9EFD0088FD8D = {
+			isa = PBXGroup;
+			children = (
+				D907C2A5196D9EFD0088FD8D /* TeachSmart */,
+				D907C2C4196D9EFD0088FD8D /* TeachSmartTests */,
+				D907C29E196D9EFD0088FD8D /* Frameworks */,
+				D907C29D196D9EFD0088FD8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D907C29D196D9EFD0088FD8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D907C29C196D9EFD0088FD8D /* TeachSmart.app */,
+				D907C2BD196D9EFD0088FD8D /* TeachSmartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D907C29E196D9EFD0088FD8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D907C29F196D9EFD0088FD8D /* Foundation.framework */,
+				D907C2A1196D9EFD0088FD8D /* CoreGraphics.framework */,
+				D907C2A3196D9EFD0088FD8D /* UIKit.framework */,
+				D907C2BE196D9EFD0088FD8D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D907C2A5196D9EFD0088FD8D /* TeachSmart */ = {
+			isa = PBXGroup;
+			children = (
+				D907C2AE196D9EFD0088FD8D /* TeachSmartAppDelegate.h */,
+				D907C2AF196D9EFD0088FD8D /* TeachSmartAppDelegate.m */,
+				D907C2B1196D9EFD0088FD8D /* Main.storyboard */,
+				D907C2B4196D9EFD0088FD8D /* TeachSmartViewController.h */,
+				D907C2B5196D9EFD0088FD8D /* TeachSmartViewController.m */,
+				D907C2B7196D9EFD0088FD8D /* Images.xcassets */,
+				D907C2A6196D9EFD0088FD8D /* Supporting Files */,
+			);
+			path = TeachSmart;
+			sourceTree = "<group>";
+		};
+		D907C2A6196D9EFD0088FD8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D907C2A7196D9EFD0088FD8D /* TeachSmart-Info.plist */,
+				D907C2A8196D9EFD0088FD8D /* InfoPlist.strings */,
+				D907C2AB196D9EFD0088FD8D /* main.m */,
+				D907C2AD196D9EFD0088FD8D /* TeachSmart-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D907C2C4196D9EFD0088FD8D /* TeachSmartTests */ = {
+			isa = PBXGroup;
+			children = (
+				D907C2CA196D9EFD0088FD8D /* TeachSmartTests.m */,
+				D907C2C5196D9EFD0088FD8D /* Supporting Files */,
+			);
+			path = TeachSmartTests;
+			sourceTree = "<group>";
+		};
+		D907C2C5196D9EFD0088FD8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D907C2C6196D9EFD0088FD8D /* TeachSmartTests-Info.plist */,
+				D907C2C7196D9EFD0088FD8D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D907C29B196D9EFD0088FD8D /* TeachSmart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D907C2CE196D9EFD0088FD8D /* Build configuration list for PBXNativeTarget "TeachSmart" */;
+			buildPhases = (
+				D907C298196D9EFD0088FD8D /* Sources */,
+				D907C299196D9EFD0088FD8D /* Frameworks */,
+				D907C29A196D9EFD0088FD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeachSmart;
+			productName = TeachSmart;
+			productReference = D907C29C196D9EFD0088FD8D /* TeachSmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D907C2BC196D9EFD0088FD8D /* TeachSmartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D907C2D1196D9EFD0088FD8D /* Build configuration list for PBXNativeTarget "TeachSmartTests" */;
+			buildPhases = (
+				D907C2B9196D9EFD0088FD8D /* Sources */,
+				D907C2BA196D9EFD0088FD8D /* Frameworks */,
+				D907C2BB196D9EFD0088FD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D907C2C3196D9EFD0088FD8D /* PBXTargetDependency */,
+			);
+			name = TeachSmartTests;
+			productName = TeachSmartTests;
+			productReference = D907C2BD196D9EFD0088FD8D /* TeachSmartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D907C294196D9EFD0088FD8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TeachSmart;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sascha Haseloff";
+				TargetAttributes = {
+					D907C2BC196D9EFD0088FD8D = {
+						TestTargetID = D907C29B196D9EFD0088FD8D;
+					};
+				};
+			};
+			buildConfigurationList = D907C297196D9EFD0088FD8D /* Build configuration list for PBXProject "TeachSmart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D907C293196D9EFD0088FD8D;
+			productRefGroup = D907C29D196D9EFD0088FD8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D907C29B196D9EFD0088FD8D /* TeachSmart */,
+				D907C2BC196D9EFD0088FD8D /* TeachSmartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D907C29A196D9EFD0088FD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D907C2B8196D9EFD0088FD8D /* Images.xcassets in Resources */,
+				D907C2AA196D9EFD0088FD8D /* InfoPlist.strings in Resources */,
+				D907C2B3196D9EFD0088FD8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D907C2BB196D9EFD0088FD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D907C2C9196D9EFD0088FD8D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D907C298196D9EFD0088FD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D907C2B6196D9EFD0088FD8D /* TeachSmartViewController.m in Sources */,
+				D907C2B0196D9EFD0088FD8D /* TeachSmartAppDelegate.m in Sources */,
+				D907C2AC196D9EFD0088FD8D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D907C2B9196D9EFD0088FD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D907C2CB196D9EFD0088FD8D /* TeachSmartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D907C2C3196D9EFD0088FD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D907C29B196D9EFD0088FD8D /* TeachSmart */;
+			targetProxy = D907C2C2196D9EFD0088FD8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D907C2A8196D9EFD0088FD8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D907C2A9196D9EFD0088FD8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D907C2B1196D9EFD0088FD8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D907C2B2196D9EFD0088FD8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D907C2C7196D9EFD0088FD8D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D907C2C8196D9EFD0088FD8D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D907C2CC196D9EFD0088FD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D907C2CD196D9EFD0088FD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D907C2CF196D9EFD0088FD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TeachSmart/TeachSmart-Prefix.pch";
+				INFOPLIST_FILE = "TeachSmart/TeachSmart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D907C2D0196D9EFD0088FD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TeachSmart/TeachSmart-Prefix.pch";
+				INFOPLIST_FILE = "TeachSmart/TeachSmart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D907C2D2196D9EFD0088FD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TeachSmart.app/TeachSmart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TeachSmart/TeachSmart-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TeachSmartTests/TeachSmartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D907C2D3196D9EFD0088FD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TeachSmart.app/TeachSmart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TeachSmart/TeachSmart-Prefix.pch";
+				INFOPLIST_FILE = "TeachSmartTests/TeachSmartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D907C297196D9EFD0088FD8D /* Build configuration list for PBXProject "TeachSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D907C2CC196D9EFD0088FD8D /* Debug */,
+				D907C2CD196D9EFD0088FD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D907C2CE196D9EFD0088FD8D /* Build configuration list for PBXNativeTarget "TeachSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D907C2CF196D9EFD0088FD8D /* Debug */,
+				D907C2D0196D9EFD0088FD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D907C2D1196D9EFD0088FD8D /* Build configuration list for PBXNativeTarget "TeachSmartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D907C2D2196D9EFD0088FD8D /* Debug */,
+				D907C2D3196D9EFD0088FD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D907C294196D9EFD0088FD8D /* Project object */;
+}
