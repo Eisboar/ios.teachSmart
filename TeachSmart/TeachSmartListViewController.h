@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TeachSmartViewController : UIViewController
+@interface TeachSmartListViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, NSURLSessionDataDelegate>
+
 
 @end

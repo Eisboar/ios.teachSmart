@@ -14,13 +14,14 @@
 		D907C2AC196D9EFD0088FD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2AB196D9EFD0088FD8D /* main.m */; };
 		D907C2B0196D9EFD0088FD8D /* TeachSmartAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2AF196D9EFD0088FD8D /* TeachSmartAppDelegate.m */; };
 		D907C2B3196D9EFD0088FD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D907C2B1196D9EFD0088FD8D /* Main.storyboard */; };
-		D907C2B6196D9EFD0088FD8D /* TeachSmartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2B5196D9EFD0088FD8D /* TeachSmartViewController.m */; };
+		D907C2B6196D9EFD0088FD8D /* TeachSmartListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2B5196D9EFD0088FD8D /* TeachSmartListViewController.m */; };
 		D907C2B8196D9EFD0088FD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D907C2B7196D9EFD0088FD8D /* Images.xcassets */; };
 		D907C2BF196D9EFD0088FD8D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D907C2BE196D9EFD0088FD8D /* XCTest.framework */; };
 		D907C2C0196D9EFD0088FD8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D907C29F196D9EFD0088FD8D /* Foundation.framework */; };
 		D907C2C1196D9EFD0088FD8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D907C2A3196D9EFD0088FD8D /* UIKit.framework */; };
 		D907C2C9196D9EFD0088FD8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D907C2C7196D9EFD0088FD8D /* InfoPlist.strings */; };
 		D907C2CB196D9EFD0088FD8D /* TeachSmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2CA196D9EFD0088FD8D /* TeachSmartTests.m */; };
+		D907C2D9196EB90D0088FD8D /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2D8196EB90D0088FD8D /* HttpClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		D907C2AE196D9EFD0088FD8D /* TeachSmartAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachSmartAppDelegate.h; sourceTree = "<group>"; };
 		D907C2AF196D9EFD0088FD8D /* TeachSmartAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachSmartAppDelegate.m; sourceTree = "<group>"; };
 		D907C2B2196D9EFD0088FD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D907C2B4196D9EFD0088FD8D /* TeachSmartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachSmartViewController.h; sourceTree = "<group>"; };
-		D907C2B5196D9EFD0088FD8D /* TeachSmartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachSmartViewController.m; sourceTree = "<group>"; };
+		D907C2B4196D9EFD0088FD8D /* TeachSmartListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeachSmartListViewController.h; sourceTree = "<group>"; };
+		D907C2B5196D9EFD0088FD8D /* TeachSmartListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachSmartListViewController.m; sourceTree = "<group>"; };
 		D907C2B7196D9EFD0088FD8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D907C2BD196D9EFD0088FD8D /* TeachSmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D907C2BE196D9EFD0088FD8D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D907C2C6196D9EFD0088FD8D /* TeachSmartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TeachSmartTests-Info.plist"; sourceTree = "<group>"; };
 		D907C2C8196D9EFD0088FD8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D907C2CA196D9EFD0088FD8D /* TeachSmartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachSmartTests.m; sourceTree = "<group>"; };
+		D907C2D7196EB90D0088FD8D /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		D907C2D8196EB90D0088FD8D /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,11 @@
 		D907C2A5196D9EFD0088FD8D /* TeachSmart */ = {
 			isa = PBXGroup;
 			children = (
+				D907C2D6196EB7DA0088FD8D /* model */,
+				D907C2D5196EB7B90088FD8D /* functional */,
+				D907C2D4196EB7A90088FD8D /* ui */,
 				D907C2AE196D9EFD0088FD8D /* TeachSmartAppDelegate.h */,
 				D907C2AF196D9EFD0088FD8D /* TeachSmartAppDelegate.m */,
-				D907C2B1196D9EFD0088FD8D /* Main.storyboard */,
-				D907C2B4196D9EFD0088FD8D /* TeachSmartViewController.h */,
-				D907C2B5196D9EFD0088FD8D /* TeachSmartViewController.m */,
 				D907C2B7196D9EFD0088FD8D /* Images.xcassets */,
 				D907C2A6196D9EFD0088FD8D /* Supporting Files */,
 			);
@@ -150,6 +153,32 @@
 				D907C2C7196D9EFD0088FD8D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D907C2D4196EB7A90088FD8D /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				D907C2B1196D9EFD0088FD8D /* Main.storyboard */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		D907C2D5196EB7B90088FD8D /* functional */ = {
+			isa = PBXGroup;
+			children = (
+				D907C2B4196D9EFD0088FD8D /* TeachSmartListViewController.h */,
+				D907C2B5196D9EFD0088FD8D /* TeachSmartListViewController.m */,
+				D907C2D7196EB90D0088FD8D /* HttpClient.h */,
+				D907C2D8196EB90D0088FD8D /* HttpClient.m */,
+			);
+			name = functional;
+			sourceTree = "<group>";
+		};
+		D907C2D6196EB7DA0088FD8D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D907C2B6196D9EFD0088FD8D /* TeachSmartViewController.m in Sources */,
+				D907C2B6196D9EFD0088FD8D /* TeachSmartListViewController.m in Sources */,
 				D907C2B0196D9EFD0088FD8D /* TeachSmartAppDelegate.m in Sources */,
+				D907C2D9196EB90D0088FD8D /* HttpClient.m in Sources */,
 				D907C2AC196D9EFD0088FD8D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +487,7 @@
 				D907C2D0196D9EFD0088FD8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D907C2D1196D9EFD0088FD8D /* Build configuration list for PBXNativeTarget "TeachSmartTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +496,7 @@
 				D907C2D3196D9EFD0088FD8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
