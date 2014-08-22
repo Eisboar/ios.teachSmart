@@ -7,29 +7,108 @@
 //
 
 #import "TeachSmartListViewController.h"
-#import "HttpClient.h"
+#import "TeachSmartAPI.h"
+#import "QuestionSheet.h"
+#import "QuestionViewPageController.h"
+#import "constants.h"
+#import <Foundation/Foundation.h>
 
-@interface TeachSmartListViewController ()
+
+@interface TeachSmartListViewController (){
+    //UITableView *dataTable;
+    NSMutableArray  *currentQuestionSheets;
+    QuestionViewPageController *activeQuestionViewPageController;
+    QuestionSheet *currentQuestionSheet;
+    UIActivityIndicatorView *_indicator;
+    NSNotificationCenter* notificationCenter;
+}
+
+
 
 @end
 
 @implementation TeachSmartListViewController
 
-NSArray *tableData;
+- (void)dealloc{
+    [notificationCenter removeObserver:self];
+}
+
 
 - (void)viewDidLoad
 {
+//    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+//    [center addObserverForName:nil
+//                        object:nil
+//                         queue:nil
+//                    usingBlock:^(NSNotification *notification)
+//    {
+//        NSLog(@"%@", notification.name);
+//    }];
+    //NSLog(questionSheetsUpdateNotification);
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    tableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+	
+    notificationCenter =  [NSNotificationCenter defaultCenter];
     
+                                                
+                                                
+    [notificationCenter addObserver:self selector:@selector(receivedQuestionSheetsUpdate:) name:questionSheetsUpdateNotification object:nil];
+    [notificationCenter addObserver:self selector:@selector(receivedQuestionSheetLoadedNotification:)
+                                                 name:questionSheetLoadedNotification
+                                               object:nil];
+    [notificationCenter addObserver:self
+                                             selector:@selector(receivedNetworkErrorMessage:)
+                                                 name:networkErrorNotification
+                                               object:nil];
     
-    HttpClient *httpClient = [[HttpClient alloc] init];
+    //initdata
+    [self askForTableRefresh];
+
     
-    [httpClient sendHTTPPost];
+    // This is the new stuff here ;)
+
+    // Set the resizing mask so it's not stretched
+
+
     
-    NSLog(@"hallo");
+    // Start it spinning! Don't miss this step
+    [self.indicator startAnimating];
     
+
+    
+}
+
+- (UIActivityIndicatorView*)indicator{
+    if (!_indicator){
+        _indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        _indicator.autoresizingMask =
+        UIViewAutoresizingFlexibleTopMargin |
+        UIViewAutoresizingFlexibleRightMargin |
+        UIViewAutoresizingFlexibleBottomMargin |
+        UIViewAutoresizingFlexibleLeftMargin;
+        
+        // Place it in the middle of the view
+        _indicator.center = self.view.center;
+        
+        [_indicator setBackgroundColor: [UIColor whiteColor]];
+        [_indicator setColor:[UIColor blackColor]];
+        
+        // Add it into the spinnerView
+        [self.view addSubview:_indicator];
+    }
+        
+    return _indicator;
+}
+
+- (void)receivedNetworkErrorMessage:(NSNotification*)notification
+{
+//    if ([[notification name] isEqualToString:questionSheetsUpdateNotification]){
+//        currentQuestionSheets = [[TeachSmartAPI sharedInstance] currentQuestionSheets];
+//        [self.tableView reloadData];
+//    }
+    UIAlertView *theAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"network problem, please check server ip" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil];
+    [theAlert show];
+    [self.indicator stopAnimating];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,21 +119,78 @@ NSArray *tableData;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [tableData count];
+    int count = [currentQuestionSheets count];
+    //NSLog(@"hallo %i", count);
+    return count;
+    //return 1;
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    //NSLog(@"return sth");
+    static NSString *simpleTableIdentifier = @"cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:simpleTableIdentifier];
+    }
+    QuestionSheet *questionSheet = [currentQuestionSheets objectAtIndex:indexPath.row];
+    cell.textLabel.text = [questionSheet name];
+    cell.detailTextLabel.text = [questionSheet timestamp];
+    return cell;
+}
+
+- (void) receivedQuestionSheetsUpdate:(NSNotification *) notification
+{
+    NSLog([notification name]);
+    if ([[notification name] isEqualToString:questionSheetsUpdateNotification]){
+        currentQuestionSheets = [[TeachSmartAPI sharedInstance] currentQuestionSheets];
+        [self.tableView reloadData];
+        [self.indicator stopAnimating];
     }
     
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    return cell;
+
+}
+
+- (void)receivedQuestionSheetLoadedNotification:(NSNotification *)notification
+{
+    if ([[notification name] isEqualToString:questionSheetLoadedNotification]){
+        NSLog(@"got the quetsionsheet");
+        currentQuestionSheet = [[TeachSmartAPI sharedInstance] currentQuestionSheet];
+        [self performSegueWithIdentifier:@"GoToQuestionView" sender:self];
+        [self.indicator stopAnimating];
+    }
+}
+
+
+- (IBAction)refreshButtonPressed:(id)sender {
+    [self askForTableRefresh];
+}
+
+- (void)askForTableRefresh
+{
+    [self.indicator startAnimating];
+    [[TeachSmartAPI sharedInstance] getSheets];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //QuestionViewPageController *test = [self.storyboard instantiateViewControllerWithIdentifier:@"QuestionViewPageController"];
+    [self.indicator startAnimating];
+    QuestionSheet *questionsheet = [currentQuestionSheets objectAtIndex:indexPath.row];
+    [[TeachSmartAPI sharedInstance] getSheet:questionsheet.ID];
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"GoToQuestionView"]) {
+        //NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        activeQuestionViewPageController = segue.destinationViewController;
+        //if (!currentQuestionSheet)
+        //    NSLog(@"there");
+        activeQuestionViewPageController.questionSheet = currentQuestionSheet;
+    }
 }
 
 

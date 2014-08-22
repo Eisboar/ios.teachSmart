@@ -22,6 +22,17 @@
 		D907C2C9196D9EFD0088FD8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D907C2C7196D9EFD0088FD8D /* InfoPlist.strings */; };
 		D907C2CB196D9EFD0088FD8D /* TeachSmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2CA196D9EFD0088FD8D /* TeachSmartTests.m */; };
 		D907C2D9196EB90D0088FD8D /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D907C2D8196EB90D0088FD8D /* HttpClient.m */; };
+		D94474C21987FD6300E0AAFD /* TeachSmartAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D94474C11987FD6300E0AAFD /* TeachSmartAPI.m */; };
+		D94BACE119938E7300784603 /* QuestionViewModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94BACE019938E7300784603 /* QuestionViewModelController.m */; };
+		D94BACE41993906C00784603 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94BACE31993906C00784603 /* QuestionViewController.m */; };
+		D94E685619944FF1008ED4A5 /* MultipleChoiceQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = D94E685519944FF1008ED4A5 /* MultipleChoiceQuestion.m */; };
+		D94E6859199451BD008ED4A5 /* RatingQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = D94E6858199451BD008ED4A5 /* RatingQuestion.m */; };
+		D94E685C19945586008ED4A5 /* MultipleChoiceAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = D94E685B19945586008ED4A5 /* MultipleChoiceAnswer.m */; };
+		D94E685F199518F2008ED4A5 /* MultipleChoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = D94E685E199518F2008ED4A5 /* MultipleChoiceView.m */; };
+		D97663AD199A85990023FEFA /* RatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D97663AC199A85990023FEFA /* RatingView.m */; };
+		D992C537198D474800E41EAB /* QuestionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D992C536198D474800E41EAB /* QuestionSheet.m */; };
+		D992C53A198D498F00E41EAB /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = D992C539198D498F00E41EAB /* Question.m */; };
+		D9DF67DF198FD7420025B5C1 /* QuestionViewPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DF67DE198FD7420025B5C1 /* QuestionViewPageController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +67,29 @@
 		D907C2CA196D9EFD0088FD8D /* TeachSmartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeachSmartTests.m; sourceTree = "<group>"; };
 		D907C2D7196EB90D0088FD8D /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
 		D907C2D8196EB90D0088FD8D /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		D94474C01987FD6300E0AAFD /* TeachSmartAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachSmartAPI.h; sourceTree = "<group>"; };
+		D94474C11987FD6300E0AAFD /* TeachSmartAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachSmartAPI.m; sourceTree = "<group>"; };
+		D94BACDF19938E7300784603 /* QuestionViewModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewModelController.h; sourceTree = "<group>"; };
+		D94BACE019938E7300784603 /* QuestionViewModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewModelController.m; sourceTree = "<group>"; };
+		D94BACE21993906C00784603 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		D94BACE31993906C00784603 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		D94E68511994456B008ED4A5 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		D94E685419944FF1008ED4A5 /* MultipleChoiceQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleChoiceQuestion.h; sourceTree = "<group>"; };
+		D94E685519944FF1008ED4A5 /* MultipleChoiceQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceQuestion.m; sourceTree = "<group>"; };
+		D94E6857199451BD008ED4A5 /* RatingQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingQuestion.h; sourceTree = "<group>"; };
+		D94E6858199451BD008ED4A5 /* RatingQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingQuestion.m; sourceTree = "<group>"; };
+		D94E685A19945586008ED4A5 /* MultipleChoiceAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleChoiceAnswer.h; sourceTree = "<group>"; };
+		D94E685B19945586008ED4A5 /* MultipleChoiceAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceAnswer.m; sourceTree = "<group>"; };
+		D94E685D199518F2008ED4A5 /* MultipleChoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleChoiceView.h; sourceTree = "<group>"; };
+		D94E685E199518F2008ED4A5 /* MultipleChoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceView.m; sourceTree = "<group>"; };
+		D97663AB199A85990023FEFA /* RatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingView.h; sourceTree = "<group>"; };
+		D97663AC199A85990023FEFA /* RatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingView.m; sourceTree = "<group>"; };
+		D992C535198D474800E41EAB /* QuestionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionSheet.h; sourceTree = "<group>"; };
+		D992C536198D474800E41EAB /* QuestionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionSheet.m; sourceTree = "<group>"; };
+		D992C538198D498F00E41EAB /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		D992C539198D498F00E41EAB /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		D9DF67DD198FD7420025B5C1 /* QuestionViewPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewPageController.h; sourceTree = "<group>"; };
+		D9DF67DE198FD7420025B5C1 /* QuestionViewPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewPageController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +149,9 @@
 		D907C2A5196D9EFD0088FD8D /* TeachSmart */ = {
 			isa = PBXGroup;
 			children = (
+				D94474BF1987FC6D00E0AAFD /* api */,
 				D907C2D6196EB7DA0088FD8D /* model */,
-				D907C2D5196EB7B90088FD8D /* functional */,
+				D907C2D5196EB7B90088FD8D /* controller */,
 				D907C2D4196EB7A90088FD8D /* ui */,
 				D907C2AE196D9EFD0088FD8D /* TeachSmartAppDelegate.h */,
 				D907C2AF196D9EFD0088FD8D /* TeachSmartAppDelegate.m */,
@@ -158,27 +193,57 @@
 		D907C2D4196EB7A90088FD8D /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				D94E685D199518F2008ED4A5 /* MultipleChoiceView.h */,
+				D94E685E199518F2008ED4A5 /* MultipleChoiceView.m */,
 				D907C2B1196D9EFD0088FD8D /* Main.storyboard */,
+				D97663AB199A85990023FEFA /* RatingView.h */,
+				D97663AC199A85990023FEFA /* RatingView.m */,
 			);
 			name = ui;
 			sourceTree = "<group>";
 		};
-		D907C2D5196EB7B90088FD8D /* functional */ = {
+		D907C2D5196EB7B90088FD8D /* controller */ = {
 			isa = PBXGroup;
 			children = (
 				D907C2B4196D9EFD0088FD8D /* TeachSmartListViewController.h */,
 				D907C2B5196D9EFD0088FD8D /* TeachSmartListViewController.m */,
-				D907C2D7196EB90D0088FD8D /* HttpClient.h */,
-				D907C2D8196EB90D0088FD8D /* HttpClient.m */,
+				D9DF67DD198FD7420025B5C1 /* QuestionViewPageController.h */,
+				D9DF67DE198FD7420025B5C1 /* QuestionViewPageController.m */,
+				D94BACDF19938E7300784603 /* QuestionViewModelController.h */,
+				D94BACE019938E7300784603 /* QuestionViewModelController.m */,
+				D94BACE21993906C00784603 /* QuestionViewController.h */,
+				D94BACE31993906C00784603 /* QuestionViewController.m */,
 			);
-			name = functional;
+			name = controller;
 			sourceTree = "<group>";
 		};
 		D907C2D6196EB7DA0088FD8D /* model */ = {
 			isa = PBXGroup;
 			children = (
+				D992C535198D474800E41EAB /* QuestionSheet.h */,
+				D992C536198D474800E41EAB /* QuestionSheet.m */,
+				D992C538198D498F00E41EAB /* Question.h */,
+				D992C539198D498F00E41EAB /* Question.m */,
+				D94E685419944FF1008ED4A5 /* MultipleChoiceQuestion.h */,
+				D94E685519944FF1008ED4A5 /* MultipleChoiceQuestion.m */,
+				D94E6857199451BD008ED4A5 /* RatingQuestion.h */,
+				D94E6858199451BD008ED4A5 /* RatingQuestion.m */,
+				D94E685A19945586008ED4A5 /* MultipleChoiceAnswer.h */,
+				D94E685B19945586008ED4A5 /* MultipleChoiceAnswer.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		D94474BF1987FC6D00E0AAFD /* api */ = {
+			isa = PBXGroup;
+			children = (
+				D94E68511994456B008ED4A5 /* constants.h */,
+				D907C2D8196EB90D0088FD8D /* HttpClient.m */,
+				D907C2D7196EB90D0088FD8D /* HttpClient.h */,
+				D94474C01987FD6300E0AAFD /* TeachSmartAPI.h */,
+				D94474C11987FD6300E0AAFD /* TeachSmartAPI.m */,
+			);
+			name = api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +344,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D94E685619944FF1008ED4A5 /* MultipleChoiceQuestion.m in Sources */,
 				D907C2B6196D9EFD0088FD8D /* TeachSmartListViewController.m in Sources */,
+				D992C537198D474800E41EAB /* QuestionSheet.m in Sources */,
+				D97663AD199A85990023FEFA /* RatingView.m in Sources */,
+				D9DF67DF198FD7420025B5C1 /* QuestionViewPageController.m in Sources */,
 				D907C2B0196D9EFD0088FD8D /* TeachSmartAppDelegate.m in Sources */,
+				D94474C21987FD6300E0AAFD /* TeachSmartAPI.m in Sources */,
+				D94BACE41993906C00784603 /* QuestionViewController.m in Sources */,
+				D94BACE119938E7300784603 /* QuestionViewModelController.m in Sources */,
+				D94E6859199451BD008ED4A5 /* RatingQuestion.m in Sources */,
+				D94E685F199518F2008ED4A5 /* MultipleChoiceView.m in Sources */,
+				D992C53A198D498F00E41EAB /* Question.m in Sources */,
 				D907C2D9196EB90D0088FD8D /* HttpClient.m in Sources */,
 				D907C2AC196D9EFD0088FD8D /* main.m in Sources */,
+				D94E685C19945586008ED4A5 /* MultipleChoiceAnswer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HttpClient.h"
 
-@interface TeachSmartListViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, NSURLSessionDataDelegate>
+@interface TeachSmartListViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
+- (IBAction)refreshButtonPressed:(id)sender;
+- (void) loadListView;
 
 @end
